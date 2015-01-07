@@ -48,6 +48,8 @@ static NSUInteger const JLRouteDefaultPriority = 0;
 - (void)removeRoutesWithPattern:(NSString *)routePattern;
 - (void)removeAllRoutes;
 
+- (NSDictionary *)parametersForRouteURL:(NSURL *)URL withParameters:(NSDictionary *)parameters;
+
 - (BOOL)routeURL:(NSURL *)URL;
 - (BOOL)routeURL:(NSURL *)URL withParameters:(NSDictionary *)parameters;
 
